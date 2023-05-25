@@ -26,7 +26,7 @@ public class Swagger3Config {
         return new Docket(DocumentationType.OAS_30)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.cll.yygh.hosp.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.cll.yygh"))
                 .paths(PathSelectors.any())
                 .build();
     }
